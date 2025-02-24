@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-FFMPEG_KIT_TAG="min.v5.1.2.6"
+FFMPEG_KIT_TAG="min.v7.1.1"
 FFMPEG_KIT_CHECKOUT="origin/develop"
 #FFMPEG_KIT_CHECKOUT="origin/tags/$FFMPEG_KIT_TAG"
 
@@ -73,7 +73,7 @@ git push
 git push origin --tags
 
 echo "Creating Release..."
-gh release create -p -d $FFMPEG_KIT_TAG -t "FFmpegKit SPM $FFMPEG_KIT_TAG" --generate-notes --verify-tag
+gh release create -p -d $FFMPEG_KIT_TAG -t "FFmpeg libav SPM $FFMPEG_KIT_TAG" --generate-notes --verify-tag
 
 echo "Uploading Binaries..."
 for f in $(ls "$XCFRAMEWORK_DIR")
