@@ -79,6 +79,7 @@ if [[ -z "${ANDROID_NDK_ROOT}" && -d "$HOME/Library/Android/sdk/ndk" ]]; then
 fi
 
 echo "Building for Android..."
+cd .tmp/ffmpeg-kit/
 ./android.sh --disable-arm-v7a-neon --enable-android-media-codec --enable-android-zlib --enable-gmp --enable-gnutls
 
 cd ../../
