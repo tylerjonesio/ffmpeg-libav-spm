@@ -3,11 +3,11 @@
 
 import PackageDescription
 
-let release = "min.v7.1.3.0"
+let release = "min.v9.0.2.0"
 let androidBundleName = "ffmpegandroid"
-let androidBundleChecksum = "120700b0253ca0acd036b82c3e4dbf816edb4cf5623e244244e999e92b61002a"
+let androidBundleChecksum = "ee1d4978ed80300f18ab8e6134b8fbb4d07992f8800f547c4162f504e2a3317c"
 
-let frameworks = ["libavcodec": "03426fcda41ec61b925afbb6cf0c5e8796c569443ef53f32bbb74191f0b4386c", "libavdevice": "2d5f4489e6769e2859f3a04d545cb1962251da41291bb40b6851ec3b52bf03c9", "libavfilter": "c4fa55e438cc1638357f48c07716e2712b0f78b7e83f7824ff3b07fc4d4ed9c7", "libavformat": "e5e4e7ef94a275529c0852f2865e0dc6f3965c1ee991e281ecaa525529ab8e2c", "libavutil": "b87310b863224f7bf7095c1aae8835d173335bd945714776d9e9d6e2fa6eded7", "libswresample": "46bbe79946676a0293ae8f60ef27980a2bee93abf1b8fa3b43466ddc985e5df4", "libswscale": "1497cee3d8fd96fef8dc1480b20aacaa5717c875fb9c80ec698a34552372e5d1"]
+let frameworks = ["libavcodec": "2b8179787058dc496920b8c6a8020c0bd6253402a1663eaab39df7cbf32856ac", "libavdevice": "f9259ea17257e0be2af24e03c8db5e051b3d7cdfe733444101d88ddf9960a4fd", "libavfilter": "088e87a904d84a3a204566e6ca14a8af7936cbb484467c34e9493a88381433fa", "libavformat": "24693d7fb33608a1029aafab8eada27499d5fb7d3033809aa774c0281c5e58ed", "libavutil": "46f1f0032aea1d430f651eeaee80c075226761e57618a7486fa9b2446b252e45", "libswresample": "f62f87fb138b864eed561b399b3b217a0fd917862c66a814d744b9aa12d2c21b", "libswscale": "2ac827798ce3603d4dc5b7057dd2d45517ca622697e1df4abf95e2b78ae07946"]
 
 func xcframework(_ package: Dictionary<String, String>.Element) -> Target {
     let url = "https://github.com/tylerjonesio/ffmpeg-libav-spm/releases/download/\(release)/\(package.key).xcframework.zip"
